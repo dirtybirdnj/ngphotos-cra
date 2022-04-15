@@ -1,23 +1,19 @@
-import Link from 'next/link'
+import styled from 'styled-components';
+
+const FooterContainer = styled.div`
+  display: flex;
+  justify-content: right;
+  align-items: center;
+`;
+
+const SocialContainer = styled.div`
+
+`;
 
 export const Footer = (props) => {
   return (
-    <div>
-        <Link href="/">
-          <a>HOME</a>
-        </Link>
-        <Link href="/posts">
-          <a>FACEBOOK</a>
-        </Link>
-        <Link href="/posts">
-          <a>INSTAGRAM</a>
-        </Link>
-        <Link href="/posts">
-          <a>PINTREST</a>
-        </Link>
-        <Link href="/posts">
-          <a>EMAIL</a>
-        </Link>
-    </div>
+    <FooterContainer>
+      <SocialContainer>LINK LINK LINK</SocialContainer>
+    </FooterContainer>
   )
 }

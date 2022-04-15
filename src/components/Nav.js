@@ -1,8 +1,24 @@
-import Link from 'next/link'
+import styled from 'styled-components';
 
-export const Navbar = (props) => {
+const NavContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Link = styled.div`
+  color: red;
+  padding: 20px;
+
+  &:hover {
+    color: blue;
+    cursor: pointer;
+  }
+`;
+
+export const Nav = (props) => {
   return (
-    <div>
+    <NavContainer>
         <Link href="/">
           <a>HOME</a>
         </Link>
@@ -18,6 +34,6 @@ export const Navbar = (props) => {
         <Link href="/posts">
           <a>CONTACT</a>
         </Link>
-    </div>
+    </NavContainer>
   )
 }
